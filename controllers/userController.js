@@ -516,9 +516,7 @@ var m2m2mUser = async(req,res)=>{
             {
               model: db.player,
             //   through: { attributes: [] } // Hide unwanted `PlayerGameTeam` nested object from results
-            },
-            db.team
-          ]
+            },db.team]
         }
       });
     res.status(200).json({data:data})
